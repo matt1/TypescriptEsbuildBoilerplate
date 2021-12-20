@@ -1,0 +1,19 @@
+{
+  "name": "tsboilerplate",
+  "version": "0.0.1",
+  "description": "TS Project boiler plate",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/esbuild --bundle src/index.ts --outfile=www/bundle.js",
+    "serve": "npm run build -- --servedir=www"
+  },
+  "author": "",
+  "license": "MIT",
+  "_id": "tsboilerplate@0.0.1",
+  "devDependencies": {
+    "esbuild": "^0.14.6"
+  }
+}
